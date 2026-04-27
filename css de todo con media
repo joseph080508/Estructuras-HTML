@@ -1,0 +1,182 @@
+/* =========================
+   🔹 RESET BÁSICO
+   ========================= */
+body {
+    margin: 0; /* elimina espacios por defecto del navegador */
+    font-family: Arial; /* define tipo de letra */
+}
+
+/* =========================
+   🔹 HEADER
+   ========================= */
+header {
+    background: black; /* color de fondo */
+    color: white; /* color del texto */
+    padding: 10px; /* espacio interno */
+}
+
+/* =========================
+   🔹 MENÚ
+   ========================= */
+nav ul {
+    display: flex; /* coloca los elementos en fila */
+    justify-content: flex-end; /* mueve el menú a la derecha */
+    list-style: none; /* quita los puntos de lista */
+    padding: 0; /* elimina espacio interno */
+}
+
+nav li {
+    margin: 10px; /* espacio entre elementos */
+}
+
+nav a {
+    color: white; /* color del texto */
+    text-decoration: none; /* quita subrayado */
+}
+
+/* =========================
+   🔹 BOTONES
+   ========================= */
+button {
+    padding: 5px 10px; /* espacio interno */
+    margin: 5px; /* espacio externo */
+    cursor: pointer; /* cambia cursor */
+}
+
+/* HOVER (cuando pasas el mouse) */
+button:hover {
+    background: red; /* cambia color al pasar el mouse */
+    color: white; /* cambia texto */
+}
+
+/* =========================
+   🔹 CONTENEDOR PRINCIPAL
+   ========================= */
+.contenedor {
+    display: flex; /* coloca contenido lado a lado */
+    flex-wrap: wrap; /* evita que se rompa en pantallas pequeñas */
+    padding: 20px; /* espacio interno */
+}
+
+/* =========================
+   🔹 COLUMNAS
+   ========================= */
+.izquierda {
+    width: 50%; /* ocupa la mitad izquierda */
+}
+
+.derecha {
+    width: 50%; /* ocupa la mitad derecha */
+}
+
+/* =========================
+   🔹 IMÁGENES
+   ========================= */
+img {
+    width: 100%; /* evita que se salga del contenedor */
+    border-radius: 10px; /* bordes redondeados */
+}
+
+/* =========================
+   🔹 CAJAS
+   ========================= */
+#caja {
+    background: lightgray; /* color fondo */
+    padding: 10px; /* espacio interno */
+    margin: 10px 0; /* espacio externo */
+}
+
+#box {
+    background: gray; /* color fondo */
+    padding: 10px; /* espacio interno */
+    margin: 10px 0; /* espacio externo */
+}
+
+/* CLASE QUE SE ACTIVA CON JS */
+.activo {
+    background: green; /* cambia color cuando se activa */
+    color: white;
+}
+
+/* =========================
+   🔹 TABLA
+   ========================= */
+table {
+    width: 100%; /* ocupa todo el ancho */
+    border-collapse: collapse; /* une bordes */
+    margin-top: 20px;
+}
+
+td, th {
+    border: 1px solid black; /* bordes */
+    padding: 10px; /* espacio interno */
+}
+
+th {
+    background: gray; /* color encabezado */
+    color: white;
+}
+
+/* =========================
+   🔹 FORMULARIO
+   ========================= */
+input {
+    padding: 5px; /* espacio interno */
+    margin: 5px 0; /* espacio externo */
+    width: 90%; /* ancho */
+}
+
+/* =========================
+   🔹 FOOTER
+   ========================= */
+footer {
+    display: flex; /* coloca en fila */
+    justify-content: space-between; /* separa contenido */
+    background: black; /* fondo */
+    color: white; /* texto */
+    padding: 20px;
+}
+
+/* =========================
+   🔹 HAMBURGUESA
+   ========================= */
+.hamburguesa {
+    display: none; /* oculta en escritorio */
+    font-size: 25px; /* tamaño */
+    cursor: pointer; /* cursor */
+}
+
+/* =========================
+   🔹 MENÚ ACTIVO (JS)
+   ========================= */
+nav ul.active {
+    display: flex; /* muestra menú cuando JS lo activa */
+}
+
+/* =========================
+   🔹 RESPONSIVE
+   ========================= */
+@media (max-width: 768px) {
+
+    .izquierda, .derecha {
+        width: 100%; /* ocupa toda la pantalla */
+    }
+
+    nav ul {
+        display: none; /* oculta menú */
+        flex-direction: column; /* pone vertical */
+        background: black;
+    }
+
+    .hamburguesa {
+        display: block; /* muestra botón hamburguesa */
+    }
+}
+
+/* =========================
+   🔹 MODO OSCURO
+   ========================= */
+.dark {
+    background: #121212; /* fondo oscuro */
+    color: white; /* texto claro */
+}
