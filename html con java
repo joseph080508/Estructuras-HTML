@@ -1,0 +1,110 @@
+<!DOCTYPE html> <!-- Define que es HTML5 -->
+
+<html lang="es"> <!-- Idioma de la página -->
+
+<head>
+    <meta charset="UTF-8"> <!-- Permite usar tildes -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive -->
+    <title>Mi Proyecto</title> <!-- Título de la pestaña -->
+</head>
+
+<body>
+
+<!-- =========================
+     🔹 HEADER
+     ========================= -->
+<header>
+
+    <h1 id="titulo">Mi sitio web</h1> <!-- Título que se puede cambiar con JS -->
+
+    <!-- MENÚ -->
+    <nav>
+        <ul id="menu"> <!-- ID necesario para JS -->
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!-- BOTÓN MODO OSCURO -->
+    <button onclick="toggleDark()">Modo oscuro</button>
+
+    <!-- BOTÓN HAMBURGUESA -->
+    <div class="hamburguesa" onclick="toggleMenu()">☰</div>
+
+</header>
+
+<!-- =========================
+     🔹 CONTENIDO
+     ========================= -->
+<main>
+
+<section class="contenedor">
+
+    <!-- IZQUIERDA -->
+    <div class="izquierda">
+
+        <p>Texto de ejemplo</p>
+
+        <!-- BOTONES JS -->
+        <button onclick="cambiarTexto()">Cambiar texto</button>
+        <button onclick="cambiarColor()">Cambiar color</button>
+        <button onclick="cambiarEstilo()">Cambiar estilo</button>
+
+        <!-- CONTADOR -->
+        <p id="numero">0</p> <!-- Aquí se muestra el número -->
+        <button onclick="sumar()">Sumar</button>
+
+        <!-- INPUT -->
+        <input id="input" placeholder="Escribe algo"> <!-- Campo de texto -->
+        <button onclick="leerInput()">Leer input</button>
+
+        <!-- FORMULARIO -->
+        <form onsubmit="return validar()"> <!-- Llama a la función validar -->
+            <input id="nombre" placeholder="Nombre"><br>
+            <input type="email" placeholder="Email"><br>
+            <button>Enviar</button>
+        </form>
+
+        <!-- OCULTAR / MOSTRAR -->
+        <div id="caja">Caja visible</div> <!-- Elemento a ocultar -->
+        <button onclick="ocultar()">Ocultar</button>
+        <button onclick="mostrar()">Mostrar</button>
+
+        <!-- TOGGLE CLASE -->
+        <div id="box">Caja toggle</div>
+        <button onclick="activar()">Activar clase</button>
+
+        <!-- CAMBIAR HTML -->
+        <div id="contenido">Contenido original</div>
+        <button onclick="cambiarHTML()">Cambiar HTML</button>
+
+    </div>
+
+    <!-- DERECHA -->
+    <div class="derecha">
+
+        <!-- IMAGEN -->
+        <img id="img" src="https://via.placeholder.com/300"> <!-- Imagen -->
+        <button onclick="cambiarImg()">Cambiar imagen</button>
+
+    </div>
+
+</section>
+
+</main>
+
+<!-- =========================
+     🔹 FOOTER
+     ========================= -->
+<footer>
+    <p>Footer simple</p>
+</footer>
+
+<!-- =========================
+     🔹 JAVASCRIPT
+     ========================= -->
+<script src="script.js"></script> <!-- Conecta tu JS -->
+
+</body>
+</html>
