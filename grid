@@ -1,0 +1,45 @@
+#garden {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: 20% 20% 20% 20% 20%;
+}
+
+grid-column-start: 3; /*define la posicion inicial de un elemento respecto
+a las columnas de la cuadricula.*/
+
+grid-column-end: 4; /*define la posicion final de un elemento respecto
+a las columnas de la cuadricula*/
+grid-column-end: -2 /*puedes establecerlos a -1 para indicar la primera línea comenzando por la derecha.*/
+grid-column-end: span 2 /*puedes definirlo basado en la longitud de columnas deseada usando la palabra clave span. 
+Ten presente que span solo funciona con valores positivos.*/
+
+grid-column: 2 / 4; /*establecerá el comienzo del elemento de la cuadrícula en la 2ª línea vertical de esta, y su final en la 4ª línea vertical.*/
+
+grid-column: span 3/5 /*La palabra clave span también funciona con esta propiedad abreviada */
+
+grid-row-start: 3 /*grid-row-start funciona de manera semejante a grid-column-start pero a lo largo del eje vertical.*/
+
+grid-row: 3/span 5 /*desde esa posicion inicial se extiende hasta la final.*/
+
+Maneras de uso combinadas
+grid-column:2;
+grid-row:5
+
+grid-column:2/6;
+grid-row: span 5
+
+grid-area:1/2/4/6 /*grid-area admite cuatro valores separados por barras oblicuas: grid-row-start, grid-column-start, grid-row-end,
+seguido de grid-column-end.*/
+
+order: 6 /*para cambiar el valor de uno por otro*/
+
+grid-template-columns: 20% 20% 20% 20% 20%; y grid-template-rows: 20% 20% 20% 20% 20%;. 
+/*Cada propiedad tiene cinco valores que crean cinco columnas, cada una establecida al 20% de la anchura total del jardín.*/
+
+previamente hemos definido cinco columnas al 20% de anchura mediante 
+grid-template-columns: 20% 20% 20% 20% 20%;. 
+/*+Esto puedes simplificarse como*/ 
+grid-template-columns: repeat(5, 20%);
+
+grid-template-columns: repeat(3, 100px 3em 40%); /*no acepta solo valores porcentuales, sino también otras unidades como pixels y ems. 
+Incluso puedes mezclar diferentes unidades a la vez.*/
