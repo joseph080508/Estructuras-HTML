@@ -1,0 +1,174 @@
+# 🚀 Proyecto Web Interactivo con HTML, CSS y JavaScript
+
+## 📌 Introducción
+
+El presente proyecto consiste en el desarrollo de una aplicación web estática orientada a la implementación de conceptos fundamentales del desarrollo frontend. Se emplean tecnologías base como HTML5, CSS3 y JavaScript para construir una interfaz funcional, interactiva y adaptable a múltiples dispositivos.
+
+El sistema integra componentes estructurales, visuales y dinámicos, evidenciando la correcta separación de responsabilidades entre contenido, presentación y comportamiento.
+
+---
+
+## 🎯 Objetivo General
+
+Desarrollar una página web completa que permita:
+
+- Organizar contenido mediante HTML semántico
+- Aplicar estilos visuales utilizando CSS
+- Implementar interactividad mediante JavaScript
+- Garantizar adaptabilidad a diferentes dispositivos (responsive design)
+
+---
+
+## ⚙️ Arquitectura del sistema
+
+El sistema se basa en una arquitectura de tres capas:
+
+### 1. Capa de estructura (HTML)
+Define la organización del contenido mediante etiquetas semánticas como:
+
+- `<header>`: encabezado del sitio
+- `<nav>`: navegación
+- `<main>`: contenido principal
+- `<section>`: división de contenido
+- `<footer>`: pie de página
+
+### 2. Capa de presentación (CSS)
+Se encarga del diseño visual utilizando:
+
+- Flexbox para distribución de elementos
+- Media Queries para responsividad
+- Variables de estilo para modo oscuro
+- Clases dinámicas para cambios visuales
+
+### 3. Capa de comportamiento (JavaScript)
+Permite la interacción del usuario mediante:
+
+- Manipulación del DOM
+- Eventos (`onclick`, `addEventListener`)
+- Funciones dinámicas
+- Validación de formularios
+
+---
+
+## 🔄 Flujo de ejecución
+
+Cuando el usuario accede a la página:
+
+1. El navegador interpreta el HTML y construye el DOM.
+2. Se aplican los estilos CSS para renderizar la interfaz.
+3. Se ejecuta JavaScript, habilitando funcionalidades dinámicas.
+4. El usuario interactúa con la página mediante eventos (clics, inputs, etc.).
+5. JavaScript responde modificando el DOM en tiempo real.
+
+---
+
+## 🧩 Componentes del sistema
+
+### 🔹 Navegación
+- Menú horizontal en escritorio
+- Menú hamburguesa en dispositivos móviles
+
+### 🔹 Contenido principal
+- Distribución en dos columnas (texto e imágenes)
+- Uso de Flexbox para alineación
+
+### 🔹 Galería de imágenes
+- Imagen principal
+- Subdivisión en dos imágenes inferiores
+
+### 🔹 Tabla de datos
+- Representación estructurada de información
+
+### 🔹 Formulario
+- Entrada de datos del usuario
+- Validación básica mediante JavaScript
+
+### 🔹 Footer
+- Información de contacto
+- Elementos visuales como logo y enlaces
+
+---
+
+## ⚡ Funcionalidades dinámicas
+
+El sistema implementa múltiples funciones en JavaScript:
+
+- Cambio dinámico de texto (`innerText`)
+- Manipulación de estilos (`style`)
+- Alternancia de clases (`classList.toggle`)
+- Validación de formularios
+- Contador interactivo
+- Cambio de imágenes
+- Mostrar y ocultar elementos
+- Lectura de inputs
+
+---
+
+## 🎨 Diseño y experiencia de usuario
+
+Se aplican principios básicos de diseño:
+
+- Uso de colores contrastantes
+- Distribución clara del contenido
+- Espaciado adecuado
+- Efectos visuales (hover, transiciones)
+
+---
+
+## 📱 Responsividad
+
+El diseño es adaptable gracias a:
+
+- Uso de `@media queries`
+- Flexbox con `flex-wrap`
+- Unidades relativas (%)
+
+Esto permite una correcta visualización en:
+
+- Computadores
+- Tablets
+- Dispositivos móviles
+
+---
+
+## 🧠 Conceptos técnicos aplicados
+
+- DOM (Document Object Model)
+- Eventos en JavaScript
+- Manipulación de elementos HTML
+- CSS Flexbox
+- Diseño responsive
+- Separación de capas (HTML, CSS, JS)
+
+---
+
+## 🧪 Instrucciones de uso
+
+1. Abrir el archivo `.html` en un navegador web.
+2. Interactuar con los botones disponibles.
+3. Probar funcionalidades como:
+   - Menú hamburguesa
+   - Modo oscuro
+   - Formulario
+   - Botones dinámicos
+
+---
+
+## 🔄 Escalabilidad
+
+El proyecto permite futuras mejoras como:
+
+- Integración con backend
+- Uso de bases de datos
+- Implementación de frameworks (React, Vue)
+- Mejora en accesibilidad
+
+---
+
+## 📌 Conclusión
+
+Este proyecto evidencia el dominio de las tecnologías fundamentales del desarrollo web frontend, integrando estructura, diseño e interactividad en una solución coherente, funcional y escalable.
+
+Se demuestra la capacidad de construir interfaces modernas siguiendo buenas prácticas de desarrollo.
+
+---
