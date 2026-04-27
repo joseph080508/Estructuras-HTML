@@ -1,0 +1,112 @@
+
+// =========================
+// 🔹 MENÚ HAMBURGUESA
+// =========================
+function toggleMenu() { // función que se ejecuta al hacer clic
+    let menu = document.getElementById("menu"); // selecciona el menú por su id
+    menu.classList.toggle("active"); // agrega o quita la clase "active"
+}
+
+// =========================
+// 🔹 MODO OSCURO
+// =========================
+function toggleDark() { // función para cambiar el tema
+    document.body.classList.toggle("dark"); // activa o desactiva la clase "dark" en el body
+}
+
+// =========================
+// 🔹 CAMBIAR TEXTO
+// =========================
+function cambiarTexto() { // función para modificar texto
+    let titulo = document.getElementById("titulo"); // selecciona el elemento con id "titulo"
+    titulo.innerText = "Nuevo texto"; // cambia el contenido de texto
+}
+
+// =========================
+// 🔹 CAMBIAR COLOR
+// =========================
+function cambiarColor() { // función para cambiar color de fondo
+    document.body.style.background = "blue"; // modifica el fondo del body
+}
+
+// =========================
+// 🔹 CAMBIAR IMAGEN
+// =========================
+function cambiarImg() { // función para cambiar imagen
+    let imagen = document.getElementById("img"); // selecciona la imagen
+    imagen.src = "https://via.placeholder.com/300"; // cambia la ruta de la imagen
+}
+
+// =========================
+// 🔹 CONTADOR
+// =========================
+let contador = 0; // variable que guarda el número
+
+function sumar() { // función para aumentar el contador
+    contador++; // suma 1 al contador
+    document.getElementById("numero").innerText = contador; // muestra el nuevo valor
+}
+
+// =========================
+// 🔹 VALIDAR FORMULARIO
+// =========================
+function validar() { // función que se ejecuta al enviar formulario
+    let nombre = document.getElementById("nombre").value; // obtiene el valor del input
+
+    if (nombre === "") { // verifica si está vacío
+        alert("Escribe tu nombre"); // muestra mensaje
+        return false; // evita que el formulario se envíe
+    }
+}
+
+// =========================
+// 🔹 OCULTAR ELEMENTO
+// =========================
+function ocultar() { // función para ocultar
+    document.getElementById("caja").style.display = "none"; // desaparece el elemento
+}
+
+// =========================
+// 🔹 MOSTRAR ELEMENTO
+// =========================
+function mostrar() { // función para mostrar
+    document.getElementById("caja").style.display = "block"; // vuelve a aparecer
+}
+
+// =========================
+// 🔹 EVENTO CLICK GLOBAL
+// =========================
+document.addEventListener("click", function() { // escucha clics en toda la página
+    console.log("hiciste click"); // muestra mensaje en consola
+});
+
+// =========================
+// 🔹 CAMBIAR ESTILOS
+// =========================
+function cambiarEstilo() { // función para cambiar CSS
+    let el = document.getElementById("titulo"); // selecciona elemento
+    el.style.color = "red"; // cambia color del texto
+    el.style.fontSize = "30px"; // cambia tamaño del texto
+}
+
+// =========================
+// 🔹 LEER INPUT
+// =========================
+function leerInput() { // función para leer input
+    let valor = document.getElementById("input").value; // obtiene valor
+    alert(valor); // muestra valor en pantalla
+}
+
+// =========================
+// 🔹 TOGGLE CLASE
+// =========================
+function activar() { // función para activar/desactivar clase
+    document.getElementById("box").classList.toggle("activo"); // alterna clase
+}
+
+// =========================
+// 🔹 CAMBIAR HTML
+// =========================
+function cambiarHTML() { // función para cambiar contenido HTML
+    document.getElementById("contenido").innerHTML = "<b>Nuevo contenido</b>"; // inserta HTML
+}
