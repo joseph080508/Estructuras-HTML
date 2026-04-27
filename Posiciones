@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Posicionamiento</title>
+
+<style>
+
+/* =========================
+   🔹 1. IZQUIERDA Y DERECHA
+   ========================= */
+.ej1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* =========================
+   🔹 2. MITAD Y MITAD
+   ========================= */
+.ej2 {
+    display: flex;
+}
+
+.izq {
+    width: 50%;
+}
+
+.der {
+    width: 50%;
+}
+
+/* =========================
+   🔹 3. CENTRAR
+   ========================= */
+.ej3 {
+    display: flex;
+    justify-content: center;
+}
+
+/* =========================
+   🔹 4. MOVER A LA DERECHA
+   ========================= */
+.derecha-auto {
+    margin-left: auto;
+}
+
+/* =========================
+   🔹 5. TEXTO
+   ========================= */
+.texto {
+    text-align: right;
+}
+
+/* =========================
+   🔹 6. POSITION
+   ========================= */
+.padre {
+    position: relative;
+    height: 100px;
+    background: #ddd;
+}
+
+.caja {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+/* SOLO VISUAL */
+.box {
+    background: lightgray;
+    padding: 10px;
+    margin: 5px;
+}
+
+</style>
+</head>
+
+<body>
+
+<h2>1. Izquierda y derecha</h2>
+<div class="ej1">
+    <div class="box">Izquierda</div>
+    <div class="box">Derecha</div>
+</div>
+
+<h2>2. Mitad y mitad</h2>
+<div class="ej2">
+    <div class="box izq">50%</div>
+    <div class="box der">50%</div>
+</div>
+
+<h2>3. Centrar</h2>
+<div class="ej3">
+    <div class="box">Centro</div>
+</div>
+
+<h2>4. Mover a la derecha</h2>
+<div style="display:flex;">
+    <div class="box derecha-auto">Derecha</div>
+</div>
+
+<h2>5. Texto</h2>
+<p class="texto">Texto a la derecha</p>
+
+<h2>6. Position</h2>
+<div class="padre">
+    <div class="box caja">Arriba derecha</div>
+</div>
+
+</body>
+</html>
